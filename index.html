@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery_latest</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg header">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mehedi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="home-area">
+    <div class="bg-opacity">
+      <div class="title">
+        <h1 class="titled"></h1>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main-div-here">
+    <h2>Fill up form and hit submit</h2>
+    <div id="form_container">
+      <form id="reg_form" action="" method="post">
+        <label>First Name</label>
+        <input
+          class="tTip"
+          type="text"
+          name="f_name"
+          placeholder="First Name"
+        />
+        <span>Please Enter your name here.Remember text only</span>
+        <span id="fnameInfo"></span>
+        <label>Last Name</label>
+        <input class="tTip" type="text" name="l_name" placeholder="Last Name" />
+        <span>Please Enter your Last name here.Remember text only</span>
+        <span id="lnameInfo"></span>
+        <label>Email</label>
+        <input class="tTip" type="text" name="email" placeholder="Email" />
+        <span>Please Enter your Email here.Remember valid only</span>
+        <span id="mailInfo"></span>
+        <label>Phone Number</label>
+        <input class="tTip" type="text" name="phone" placeholder="Phone" />
+        <span>Please Enter your Phone number here.Remember numbers only</span>
+        <span id="phoneInfo"></span>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <p class="testss"> Calculator</p>
+
+    <div class="card">
+      <div class="calc-head">
+        <input type="text" id="result" maxlength="20" />
+      </div>
+
+      <div class="calc-body">
+        <input type="button" class="btn" value="c" onclick="clearResult()" />
+        <input type="button" class="btn" value="+/-"  />
+        <input type="button" class="btn" value="%"  onclick="percentNumber()"/>
+        <input type="button" class="btn btn-style" value="/" onclick="insertNumber('/')"/>
+      </div>
+
+      <div class="calc-body">
+        <input type="button" class="btn" value="7" onclick="insertNumber(7)" />
+        <input type="button" class="btn" value="8" onclick="insertNumber(8)" />
+        <input type="button" class="btn" value="9" onclick="insertNumber(9)" />
+        <input type="button" class="btn btn-style" value="*" onclick="insertNumber('*')"/>
+      </div>
+
+      <div class="calc-body">
+        <input type="button" class="btn" value="4" onclick="insertNumber(4)" />
+        <input type="button" class="btn" value="5" onclick="insertNumber(5)" />
+        <input type="button" class="btn" value="6" onclick="insertNumber(6)" />
+        <input type="button" class="btn btn-style" value="-" onclick="insertNumber('-')"/>
+      </div>
+
+      <div class="calc-body">
+        <input type="button" class="btn" value="1" onclick="insertNumber(1)" />
+        <input type="button" class="btn" value="2" onclick="insertNumber(2)" />
+        <input type="button" class="btn" value="3" onclick="insertNumber(3)" />
+        <input type="button" class="btn btn-style" value="+" onclick="insertNumber('+')"/>
+      </div>
+
+      <div class="calc-body">
+        <input type="button" class="btn" value="0" onclick="insertNumber(0)" />
+        <input
+          type="button"
+          class="btn"
+          value="."
+          onclick="insertNumber('.')"
+        />
+        <input type="button" class="btn" value="DEL" onclick="deleteNumber()"/>
+        <input
+          type="button"
+          class="btn"
+          style="background-color: #ff8300"
+          value="=" onclick="calculate()"
+        />
+      </div>
+    </div>
+   </div>
+
+  <script src="assets/js/jQuery_latest.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
